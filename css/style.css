@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* CSS CUSTOM RESET START */
+
+:root {
+    --red: #fd4455;
+    --red-dark: #c63140;
+    --bg-body-tertiary: #fefefe;
+}
+
+* {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+textarea {
+    resize: none;
+}
+
+i {
+    color: var(--red);
+}
+
+/* CSS CUSTOM RESET END */
+
+
+
+/* CUSTOM CLASS STYLE START */
+.bg-red {
+    background-color: var(--red);
+}
+
+.section-title {
+    color: var(--red);
+    font-family: 'Montserrat';
+}
+
+.vr {
+    background-color: var(--red);
+    opacity: 1;
+    border-left: 2px solid var(--red);
+    border-right: 2px solid var(--red);
+}
+
+.form-control {
+    padding: .75rem !important;
+}
+
+.modal-title {
+    color: var(--red);
+}
+
+/* CUSTOM CLASS STYLE END */
+
+
+
+/* BUTTON STYLE START */
+
+.btn {
+    font-family: 'Montserrat';
+    background-color: var(--red);
+    border: 3px solid var(--red);
+    border-radius: 0;
+    transition: 300ms;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+.btn:active {
+    border: 3px solid var(--red-dark) !important;
+    background-color: var(--red-dark) !important;
+    color: white !important;
+}
+
+.btn:hover {
+    background-color: var(--red-dark);
+    border: 3px solid var(--red-dark);
+    color: white;
+}
+
+.btn.btn-outline {
+    background-color: unset;
+    border: 3px solid var(--red);
+    color: var(--red);
+}
+
+.btn.btn-outline:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+.btn.btn-outline:active {
+    border: 3px solid var(--red-dark) !important;
+    background-color: var(--red-dark) !important;
+    color: white !important;
+}
+
+.btn.btn-read {
+    background-color: unset;
+    border: unset;
+    color: var(--red);
+    padding: unset;
+}
+
+.btn.btn-read:active {
+    border: none !important;
+    background-color: transparent !important;
+    color: var(--red) !important;
+}
+
+.btn.btn-google {
+    background-color: unset;
+}
+
+.btn.btn-google:hover {
+    background-color: #fbd9dc;
+    border: 3px solid var(--red);
+}
+
+.btn.btn-google:active {
+    background-color: #fbd9dc !important;
+    border: 3px solid var(--red) !important;
+    color: black !important;
+}
+
+/* BUTTON STYLE END */
+
+
+
+/* NAVBAR START */
+
+#navbar {
+    transition: 300ms;
+}
+
+#navbar .offcanvas {
+    transition: 300ms;
+}
+
+#navbar .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+#navbar .nav-link {
+    color: white;
+    transition: 300ms;
+}
+
+#navbar .nav-link:hover {
+    color: var(--red);
+}
+
+#navbar .nav-link.active {
+    color: var(--red) !important;
+}
+
+.navbar-scrolled {
+    background-color: #212529 !important;
+}
+
+/* NAVBAR END */
+
+
+
+/* LOGIN & SIGN UP FORM START */
+
+#login-form,
+#sign-up-form {
+    background-color: #dddcdc;
+}
+
+#login-form .login-image {
+    background-image: url(/media/login-image.webp);
+    background-size: cover;
+    background-position: left;
+}
+
+#sign-up-form .sign-up-image {
+    background-image: url(/media/sign-up-image.webp);
+    background-size: cover;
+}
+
+/* LOGIN FORM & SIGN UP FORM END */
+
+
+
+/* HOME SECTION START */
+
+#home {
+    padding: 14rem 0;
+    background-image: url(/media/home-image.webp);
+    background-size: cover;
+    background-position: 70% 30%;
+    background-repeat: no-repeat;
+}
+
+/* HOME SECTION END */
+
+
+
+/* BENEFIT SECTION START */
+
+#benefit {
+    padding-bottom: 3.5rem;
+}
+
+/* BENEFIT SECTION END */
+
+
+
+/* ABOUT SECTION START */
+
+#about {
+    padding: 5.25rem 0 5rem 0;
+}
+
+/* ABOUT SECTION END */
+
+
+
+/* SERVICE SECTION START */
+
+#service {
+    padding: 6rem 0 0 0;
+}
+
+/* SERVICE SECTION END */
+
+
+
+/* REVIEW SECTION START */
+
+#review {
+    padding: 10rem 0 5rem 0;
+}
+
+#review .swiper-pagination-bullet-active {
+    background: var(--red);
+}
+
+#review .client-review {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 16px !important;
+}
+
+/* REVIEW SECTION END */
+
+
+
+/* CONTACT SECTION START */
+
+#contact {
+    padding: 4.25rem 0 0 0;
+}
+
+#contact .container-fluid {
+    background-image: url(/media/contact-banner.webp);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#contact .contact-banner {
+    padding: 7rem 0 12rem 0;
+
+}
+
+#contact .container-xxl .row .caption {
+    background-image: url(/media/contact-backdrop.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CONTACT SECTION END */
+
+
+
+/* BLOG SECTION START */
+
+#blog {
+    padding: 5.25rem 0 9.75rem 0;
+}
+
+/* BLOG SECTION END */
+
+
+
+/* FOOTER START */
+
+footer .container-fluid a {
+    background-color: var(--red);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: 3px solid var(--red);
+    transition: 300ms;
+}
+
+footer .container-fluid a:hover {
+    background-color: transparent;
+}
+
+footer .container-fluid a:hover i {
+    color: var(--red);
+}
+
+footer .container-fluid i {
+    color: white;
+    transition: 300ms;
+}
+
+footer ul li a:hover {
+    color: var(--red) !important;
+    transition: 300ms;
+}
+
+footer form button.btn:hover {
+    background: white;
+}
+
+/* FOOTER END */
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (width < 1400px) {
+
+    .navbar .container-xxl,
+    #home,
+    #benefit,
+    #about,
+    #service,
+    #review,
+    #blog,
+    footer .container-xxl {
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+    }
+}
+
+@media screen and (width < 1200px) {
+    #about .container-xxl .image {
+        height: 35rem;
+    }
+}
+
+@media screen and (width > 992px) {
+    #home main {
+        width: 50% !important;
+    }
+
+    #contact .contact-banner div {
+        max-width: 70%;
+    }
+}
+
+@media screen and (width <=768px) {
+    #home main {
+        text-align: center !important;
+    }
+
+    #login-form .modal-dialog {
+        margin: .8rem;
+    }
+}
+
+@media screen and (width < 576px) {
+
+    p,
+    .btn,
+    .form-label,
+    .form-control,
+    li {
+        font-size: 14px !important;
+    }
+}

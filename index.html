@@ -1,0 +1,1566 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- WEBSITE TITLE -->
+    <title>Company Profile (Bootstrap)</title>
+
+    <!-- WEBSITE FAVICON -->
+    <link rel="icon" type="x-icon" href="media/icon/fav-icon.svg">
+
+    <!-- BOOTSTRAP CSS CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- BOOTSTRAP ICON CDN LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- SWIPERJS CSS LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="scrollspy" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" data-bs-smooth-scroll="true">
+
+    <!-- NAVBAR START -->
+
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" id="navbar">
+
+        <div class="container-xxl px-0">
+
+            <!-- NAVBAR BRAND -->
+            <a class="navbar-brand fw-bolder fs-2 me-auto py-1" href="#">
+                Company
+                <i class="bi bi-broadcast-pin"></i>
+            </a>
+
+            <!-- NAVBAR MENU TOGGLER BUTTON -->
+            <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-light"></i>
+            </button>
+
+            <!-- SIDEBAR -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="true">
+
+                <!-- SIDEBAR HEADER -->
+                <div class="offcanvas-header p-3">
+
+                    <!-- SIDEBAR CLOSE BUTTON -->
+                    <button type="button" class="btn-close m-0 border-0 shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+
+                </div>
+
+                <!-- SIDEBAR BODY -->
+                <div class="offcanvas-body p-lg-0 ps-sm-4">
+
+                    <!-- NAVIGATION LINK LIST -->
+                    <ul class="navbar-nav justify-content-center flex-grow-1 gap-lg-2 gap-xl-3 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                    </ul>
+
+                    <!-- LOGIN & SIGN UP BUTTON -->
+                    <div class="button-container m-lg-0 mt-4">
+
+                        <!-- LOGIN -->
+                        <a href="html/login.html" class="btn rounded-5 px-3 py-2">
+                            Login
+                        </a>
+
+                        <!-- SIGN UP -->
+                        <a href="html/sign_up.html" class="btn btn-outline rounded-5 px-3 py-2">
+                            Sign Up
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- NAVBAR END -->
+
+    <!-- HOME SECTION START -->
+
+    <section id="home" class="bg-dark d-flex position-relative">
+
+        <!-- HOME SECTION BACKDROP -->
+        <div class="position-absolute" style="background-color: rgba(33, 37, 41, .85); inset: 0;"></div>
+
+        <div class="container-xxl d-flex align-items-center px-0 position-relative">
+
+            <!-- HOME CAPTION -->
+            <main class="text-light">
+
+                <!-- CAPTION HEADING -->
+                <h1 class=" fw-bolder">Modern IT & Tech Service Solutions</h1>
+
+                <!-- CAPTION PARAGRAPH -->
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatum doloribus deleniti
+                    minus
+                    ut animi aliquid odit, tempore et, incidunt ipsam est consectetur officiis natus.
+                </p>
+
+                <!-- CTA BUTTON -->
+                <div class="d-flex gap-3 g-0 flex-column flex-sm-row">
+                    <a href="html/sign_up.html" class="btn fs-6 flex-grow-1 flex-md-grow-0">Get Started</a>
+
+                    <a href="#contact" class="btn btn-outline fs-6 flex-grow-1 flex-md-grow-0">Contact Us</a>
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+    <!-- HOME SECTION END -->
+
+    <!-- BENEFIT SECTION START -->
+
+    <section id="benefit" class="justify-content-center d-flex">
+
+        <div class="container-xxl position-relative px-0" style="top: -2rem;">
+
+            <!-- ROW -->
+            <div class="row g-3 row-cols-lg-3 row-cols-md-2 row-cols-1 justify-content-center">
+
+                <!-- COLUMN 1 -->
+                <div class="col d-flex">
+
+                    <!-- BENEFIT CARD 1 -->
+                    <div class="card shadow-lg bg-light text-center px-3 py-5">
+
+                        <!-- BENEFIT ICON -->
+                        <i class="bi bi-person-check-fill display-1"></i>
+
+                        <!-- BENEFIT NAME -->
+                        <h3 class="fw-bold">IT Expertise</h3>
+
+                        <!-- BENEFIT EXPLANATION -->
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at distinctio quae
+                            aspernatur consequuntur eius?
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="col d-flex">
+
+                    <!-- BENEFIT CARD 2 -->
+                    <div class="card shadow-lg bg-light text-center px-3 py-5">
+
+                        <!-- BENEFIT ICON -->
+                        <i class="bi bi-headset display-1"></i>
+
+                        <!-- BENEFIT NAME -->
+                        <h3 class="fw-bold">24/7 Customer Service</h3>
+
+                        <!-- BENEFIT EXPLANATION -->
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at distinctio quae
+                            aspernatur consequuntur eius?
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="col d-flex">
+
+                    <!-- CARD 3 -->
+                    <div class="card shadow-lg bg-light text-center px-3 py-5">
+
+                        <!-- BENEFIT ICON -->
+                        <i class="bi bi-bar-chart display-1"></i>
+
+                        <!-- BENEFIT NAME -->
+                        <h3 class="fw-bold">High Performance</h3>
+
+                        <!-- BENEFIT EXPLANATION -->
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at distinctio quae
+                            aspernatur consequuntur eius?
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- BENEFIT SECTION END -->
+
+    <!-- ABOUT SECTION STAR -->
+
+    <section id="about" class="">
+
+        <div class="container-xxl px-0">
+
+            <!-- ROW -->
+            <div class="row justify-content-center g-0 gap-xl-0 gap-4">
+
+                <!-- COLUMN 1 (IMAGE) -->
+                <div class="col col-12 col-md-8 col-xl-5 justify-content-center">
+
+                    <img src="media/about-image.webp" class="w-100 h-100 rounded-3" alt="">
+
+                </div>
+
+                <!-- COLUMN 2 (CAPTION) -->
+                <div class="col col-12 col-xl-7 d-flex align-items-center">
+
+                    <div class="ps-xl-5 ps-0">
+                        <!-- SECTION HEADING -->
+                        <h4 class="section-title">About Us</h4>
+
+                        <!-- CAPTION HEADING -->
+                        <h1 class="fw-bold">Let us be your partners preferred IT Partner</h1>
+
+                        <!-- CAPTION PARAPGRAPH -->
+                        <p class="mb-4">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, molestias maxime! Aliquam
+                            maxime adipisci vel, unde quas expedita voluptatum, officiis omnis harum earum corporis
+                            beatae.
+                        </p>
+
+                        <!-- CAPTION QUOTE -->
+                        <div class="d-flex align-items-center">
+                            <div class="vr mx-3"></div>
+                            <div class="">
+                                <p class="fw-semibold fst-italic">
+                                    As one of the world's largest IT Service Providers, our deep pool of over 130
+                                    certified
+                                    engineers and IT support staff
+                                </p>
+                                <p class="m-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit molestiae
+                                    necessitatibus deserunt asperiores praesentium reiciendis laborum ullam aliquid eos
+                                    temporibus, numquam laudantium doloribus sequi, dolor neque fugit!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CTA BUTTON -->
+                        <a href="html/sign_up.html" class="btn fs-6 my-4">Get Started</a>
+
+                        <!-- BENEFIT LIST -->
+                        <ul class="p-0 m-0">
+                            <li class="d-flex gap-2">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <p class="mb-2">
+                                    We are commited to providing quality IT Services
+                                </p>
+                            </li>
+
+                            <li class="d-flex gap-2">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <p class="mb-2">
+                                    Provided by experts to help challenge critical activities
+                                </p>
+                            </li>
+                            <li class="d-flex gap-2">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <p class="mb-0">
+                                    Really know the true needs expectations of customers
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION END -->
+
+    <!-- SERVICE SECTION START -->
+
+    <section id="service" class="">
+
+        <div class="container-xxl px-0">
+
+            <!-- ROW -->
+            <div class="row g-3 row-cols-xl-3 row-cols-md-2 row-cols-1">
+
+                <!-- COLUMN 1 -->
+                <div class="col d-flex">
+
+                    <!-- SERVICE CAPTION -->
+                    <div class="">
+
+                        <!-- SECTION HEADING -->
+                        <h4 class="section-title">Our Services</h4>
+
+                        <!-- CAPTION HEADING -->
+                        <h1 class="fw-bold">Solutions & Focus Areas</h1>
+
+                        <!-- CAPTION PARAGRAPH -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium adipisci quam
+                            asperiores deserunt placeat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="col d-flex">
+
+                    <!-- SERVICE CARD 1 -->
+                    <div class="card d-flex flex-column shadow rounded-3 text-center py-4 px-3">
+
+                        <!-- SERVICE ICON -->
+                        <i class="bi bi-code-slash display-1"></i>
+
+                        <!-- SERVICE NAME -->
+                        <h3 class="fw-bold">Web Development</h3>
+
+                        <!-- SERVICE EXPLANATION -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam, soluta quas harum
+                            maiores similique eum quaerat?
+                        </p>
+
+                        <!-- MODAL BUTTON (READ MORE) -->
+                        <button href="#" class="btn btn-read mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#WebDevelopment">
+                            Read More
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+
+                        <!-- SERVICE MODAL WEB DEVELOPMENT -->
+                        <div class="modal fade" id="WebDevelopment" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <!-- MODAL TITLE -->
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                            Our Service
+                                        </h1>
+
+                                        <!-- MODAL CLOSE BUTTON -->
+                                        <button type="button" class="btn-close  border-0 shadow-none"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+
+                                        <!-- MODAL SERVICE NAME -->
+                                        <h1 class="fs-5 fw-bold">
+                                            Web Development
+                                        </h1>
+
+                                        <!-- MODAL SERVICE EXPLANATION -->
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt
+                                            totam enim inventore! Minima, atque labore enim neque, reiciendis quaerat
+                                            optio voluptatum voluptas doloremque tenetur ipsam minus nesciunt magnam
+                                            alias.
+                                        </p>
+
+                                        <!-- MODAL OFFER LIST -->
+                                        <ul class="p-0">
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-0">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Incidunt, suscipit.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="col d-flex">
+
+                    <!-- SERVICE CARD 2 -->
+                    <div class="card d-flex flex-column shadow rounded-3 text-center py-4 px-3">
+
+                        <!-- SERVICE ICON -->
+                        <i class="bi bi-router display-1"></i>
+
+                        <!-- SERVICE NAME -->
+                        <h3 class="fw-bold">Network Management</h3>
+
+                        <!-- SERVICE EXPLANATION -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam, soluta quas harum
+                            maiores similique eum quaerat?
+                        </p>
+
+                        <!-- MODAL BUTTON (READ MORE) -->
+                        <button href="#" class="btn btn-read mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#NetworkManagement">
+                            Read More
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+
+                        <!-- SERVICE MODAL NETWORK MANAGEMENT -->
+                        <div class="modal fade" id="NetworkManagement" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <!-- MODAL TITLE -->
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                            Our Service
+                                        </h1>
+
+                                        <!-- MODAL CLOSE BUTTON -->
+                                        <button type="button" class="btn-close  border-0 shadow-none"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+
+                                        <!-- MODAL SERVICE NAME -->
+                                        <h1 class="fs-5 fw-bold">
+                                            Network Management
+                                        </h1>
+
+                                        <!-- MODAL SERVICE EXPLANATION -->
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt
+                                            totam enim inventore! Minima, atque labore enim neque, reiciendis quaerat
+                                            optio voluptatum voluptas doloremque tenetur ipsam minus nesciunt magnam
+                                            alias.
+                                        </p>
+
+                                        <!-- MODAL OFFER LIST -->
+                                        <ul class="p-0">
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-0">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Incidunt, suscipit.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLUMN 4 -->
+                <div class="col d-flex">
+
+                    <!-- SERVICE CARD 3 -->
+                    <div class="card d-flex flex-column shadow rounded-3 text-center py-4 px-3">
+
+                        <!-- SERVICE ICON -->
+                        <i class="bi bi-display display-1"></i>
+
+                        <!-- SERVICE NAME -->
+                        <h3 class="fw-bold">Software Development</h3>
+
+                        <!-- SERVICE EXPLANATION -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam, soluta quas harum
+                            maiores similique eum quaerat?
+                        </p>
+
+                        <!-- MODAL BUTTON (READ MORE) -->
+                        <button href="#" class="btn btn-read mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#SoftwareDevelopment">
+                            Read More
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+
+                        <!-- SERVICE MODAL SOFTWARE DEVELOPMENT -->
+                        <div class="modal fade" id="SoftwareDevelopment" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <!-- MODAL TITLE -->
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                            Our Service
+                                        </h1>
+
+                                        <!-- MODAL CLOSE BUTTON -->
+                                        <button type="button" class="btn-close  border-0 shadow-none"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+
+                                        <!-- MODAL SERVICE NAME -->
+                                        <h1 class="fs-5 fw-bold">
+                                            Software Development
+                                        </h1>
+
+                                        <!-- MODAL SERVICE EXPLANATION -->
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt
+                                            totam enim inventore! Minima, atque labore enim neque, reiciendis quaerat
+                                            optio voluptatum voluptas doloremque tenetur ipsam minus nesciunt magnam
+                                            alias.
+                                        </p>
+
+                                        <!-- MODAL OFFER LIST -->
+                                        <ul class="p-0">
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-0">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Incidunt, suscipit.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLUMN 5 -->
+                <div class="col d-flex">
+
+                    <!-- SERVICE CARD 4 -->
+                    <div class="card d-flex flex-column shadow rounded-3 text-center py-4 px-3">
+
+                        <!-- SERVICE ICON -->
+                        <i class="bi bi-diagram-3 display-1"></i>
+
+                        <!-- SERVICE NAME -->
+                        <h3 class="fw-bold">Cloud Computing</h3>
+
+                        <!-- SERVICE EXPLANATION -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam, soluta quas harum
+                            maiores similique eum quaerat?
+                        </p>
+
+                        <!-- MODAL BUTTON (READ MORE) -->
+                        <button href="#" class="btn btn-read mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#CloudComputing">
+                            Read More
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+
+                        <!-- SERVICE MODAL CLOUD COMPUTING -->
+                        <div class="modal fade" id="CloudComputing" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <!-- MODAL TITLE -->
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                            Our Service
+                                        </h1>
+
+                                        <!-- MODAL CLOSE BUTTON -->
+                                        <button type="button" class="btn-close  border-0 shadow-none"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+
+                                        <!-- MODAL SERVICE NAME -->
+                                        <h1 class="fs-5 fw-bold">
+                                            Cloud Computing
+                                        </h1>
+
+                                        <!-- MODAL SERVICE EXPLANATION -->
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt
+                                            totam enim inventore! Minima, atque labore enim neque, reiciendis quaerat
+                                            optio voluptatum voluptas doloremque tenetur ipsam minus nesciunt magnam
+                                            alias.
+                                        </p>
+
+                                        <!-- MODAL OFFER LIST -->
+                                        <ul class="p-0">
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-0">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Incidunt, suscipit.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMN 5 -->
+                <div class="col d-flex">
+
+                    <!-- SERVICE CARD 5 -->
+                    <div class="card d-flex flex-column shadow rounded-3 text-center py-4 px-3">
+
+                        <!-- SERVICE ICON -->
+                        <i class="bi bi-database-lock display-1"></i>
+
+                        <!-- SERVICE NAME -->
+                        <h3 class="fw-bold">Cyber Security</h3>
+
+                        <!-- SERVICE EXPLANATION -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam, soluta quas harum
+                            maiores similique eum quaerat?
+                        </p>
+
+                        <!-- MODAL BUTTON (READ MORE) -->
+                        <button href="#" class="btn btn-read mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#CyberSecurity">
+                            Read More
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+
+                        <!-- SERVICE MODAL CYBER SECURITY -->
+                        <div class="modal fade" id="CyberSecurity" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <!-- MODAL TITLE -->
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                            Our Service
+                                        </h1>
+
+                                        <!-- MODAL CLOSE BUTTON -->
+                                        <button type="button" class="btn-close border-0 shadow-none"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+
+                                        <!-- MODAL SERVICE NAME -->
+                                        <h1 class="fs-5 fw-bold">
+                                            Cyber Security
+                                        </h1>
+
+                                        <!-- MODAL SERVICE EXPLANATION -->
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt
+                                            totam enim inventore! Minima, atque labore enim neque, reiciendis quaerat
+                                            optio voluptatum voluptas doloremque tenetur ipsam minus nesciunt magnam
+                                            alias.
+                                        </p>
+
+                                        <!-- MODAL OFFER LIST -->
+                                        <ul class="p-0">
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-2">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                <p class="mb-0">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Incidunt, suscipit.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICE SECTION END -->
+
+    <!-- REVIEW SECTION START -->
+
+    <section id="review">
+
+        <div class="container-xxl px-0">
+
+            <!-- SECTION HEADING -->
+            <h4 class="section-title text-center">Client Review</h4>
+
+            <!-- CAPTION HEADING -->
+            <h1 class="fw-bold text-center mb-4">What our client say about us?</h1>
+
+            <!-- SWIPER -->
+            <div class=" swiper mySwiper pb-5 w-100 h-100">
+
+                <div class="swiper-wrapper">
+
+                    <!-- SWIPER SLIDE 1 -->
+                    <div class="swiper-slide p-3 card rounded-3 shadow">
+
+                        <div class="d-flex flex-column align-items-center flex-sm-row align-items-sm-center">
+
+                            <div class="mb-1 me-sm-2 d-flex align-items-center">
+                                <div class="bg-dark-subtle rounded-circle overflow-hidden"
+                                    style="width: 60px; height: 60px;">
+
+                                    <!-- CLIENT IMAGE 1 -->
+                                    <img src="media/client/client-1.jpg" class="img-fluid" alt="">
+
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <h4 class="mb-1 fw-bolder">Client Name</h4>
+                                <p class="mb-1">@client_name</p>
+                            </div>
+
+                            <div class="mb-2 ms-sm-auto align-self-sm-start">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                        </div>
+
+                        <p class="client-review mb-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptates vel voluptate
+                            inventore explicabo est unde magnam soluta repudiandae voluptas dolorem quibusdam eos
+                            eveniet nihil harum ipsum quisquam, a fugit.
+                        </p>
+
+                    </div>
+
+                    <!-- SWIPER SLIDE 2 -->
+                    <div class="swiper-slide p-3 card rounded-3 shadow">
+
+                        <div class="d-flex flex-column align-items-center flex-sm-row align-items-sm-center">
+
+                            <div class="mb-1 me-sm-2 d-flex align-items-center">
+                                <div class="bg-dark-subtle rounded-circle overflow-hidden"
+                                    style="width: 60px; height: 60px;">
+
+                                    <!-- CLIENT IMAGE 2 -->
+                                    <img src="media/client/client-2.jpg" class="img-fluid" alt="">
+
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <h4 class="mb-1 fw-bolder">Client Name</h4>
+                                <p class="mb-1">@client_name</p>
+                            </div>
+
+                            <div class="mb-2 ms-sm-auto align-self-sm-start">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                        </div>
+
+                        <p class="client-review mb-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptates vel voluptate
+                            inventore explicabo est unde magnam soluta repudiandae voluptas dolorem quibusdam eos
+                            eveniet nihil harum ipsum quisquam, a fugit.
+                        </p>
+
+                    </div>
+
+                    <!-- SWIPER SLIDE 3 -->
+                    <div class="swiper-slide p-3 card rounded-3 shadow">
+
+                        <div class="d-flex flex-column align-items-center flex-sm-row align-items-sm-center">
+
+                            <div class="mb-1 me-sm-2 d-flex align-items-center">
+                                <div class="bg-dark-subtle rounded-circle overflow-hidden"
+                                    style="width: 60px; height: 60px;">
+
+                                    <!-- CLIENT IMAGE 3 -->
+                                    <img src="media/client/client-3.jpg" class="img-fluid" alt="">
+
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <h4 class="mb-1 fw-bolder">Client Name</h4>
+                                <p class="mb-1">@client_name</p>
+                            </div>
+
+                            <div class="mb-2 ms-sm-auto align-self-sm-start">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                        </div>
+
+                        <p class="client-review mb-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptates vel voluptate
+                            inventore explicabo est unde magnam soluta repudiandae voluptas dolorem quibusdam eos
+                            eveniet nihil harum ipsum quisquam, a fugit.
+                        </p>
+
+                    </div>
+
+                    <!-- SWIPER SLIDE 4 -->
+                    <div class="swiper-slide p-3 card rounded-3 shadow">
+
+                        <div class="d-flex flex-column align-items-center flex-sm-row align-items-sm-center">
+
+                            <div class="mb-1 me-sm-2 d-flex align-items-center">
+                                <div class="bg-dark-subtle rounded-circle overflow-hidden"
+                                    style="width: 60px; height: 60px;">
+
+                                    <!-- CLIENT IMAGE 4 -->
+                                    <img src="media/client/client-4.jpg" class="img-fluid" alt="">
+
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <h4 class="mb-1 fw-bolder">Client Name</h4>
+                                <p class="mb-1">@client_name</p>
+                            </div>
+
+                            <div class="mb-2 ms-sm-auto align-self-sm-start">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                        </div>
+
+                        <p class="client-review mb-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptates vel voluptate
+                            inventore explicabo est unde magnam soluta repudiandae voluptas dolorem quibusdam eos
+                            eveniet nihil harum ipsum quisquam, a fugit.
+                        </p>
+
+                    </div>
+
+                    <!-- SWIPER SLIDE 5 -->
+                    <div class="swiper-slide p-3 card rounded-3 shadow">
+
+                        <div class="d-flex flex-column align-items-center flex-sm-row align-items-sm-center">
+
+                            <div class="mb-1 me-sm-2 d-flex align-items-center">
+                                <div class="bg-dark-subtle rounded-circle overflow-hidden"
+                                    style="width: 60px; height: 60px;">
+
+                                    <!-- CLIENT IMAGE 5 -->
+                                    <img src="media/client/client-5.jpg" class="img-fluid" alt="">
+
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <h4 class="mb-1 fw-bolder">Client Name</h4>
+                                <p class="mb-1">@client_name</p>
+                            </div>
+
+                            <div class="mb-2 ms-sm-auto align-self-sm-start">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                        </div>
+
+                        <p class="client-review mb-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptates vel voluptate
+                            inventore explicabo est unde magnam soluta repudiandae voluptas dolorem quibusdam eos
+                            eveniet nihil harum ipsum quisquam, a fugit.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- SWIPER PAGINATION -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- REVIEW SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+
+    <section id="contact">
+
+        <!-- CONTACT BANNER -->
+        <div class="container-fluid bg-dark text-light d-flex justify-content-center position-relative">
+
+            <!-- CONTACT BANNER BACKDROP -->
+            <div class="position-absolute" style="background-color: rgba(33, 37, 41, 0.8);inset: 0;"></div>
+
+            <div class="contact-banner container-xxl position-relative d-flex justify-content-center">
+
+                <div class="text-center">
+
+                    <!-- BANNER HEADING -->
+                    <h1 class="fw-bold">Don't Hesitate To Contact Us For Better Information And
+                        Services
+                    </h1>
+
+                    <!-- BANNER PARAGRAPH -->
+                    <p class="m-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur a illo voluptatum quam. Ullam,
+                        voluptas? Officia voluptatum esse corporis doloribus?
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="container-xxl px-0 position-relative shadow" style="top: -5rem;">
+
+            <!-- ROW -->
+            <div class="row g-0">
+
+                <!-- COLUMN 1 (CAPTION) -->
+                <div class="col col-lg-6 col-12 text-light position-relative d-flex">
+
+                    <div class="caption d-flex">
+
+                        <!-- CONTACT FORM IMAGE BACKDROP -->
+                        <div class="p-3 p-sm-4" style="background-color: rgba(253, 68, 86, 0.8);">
+
+                            <!-- CAPTION HEADING -->
+                            <h1 class="fw-bolder">Perfect Solution For Your Business</h1>
+
+                            <!-- CAPTION PARAGRAPH -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor tenetur
+                                suscipit
+                                sit
+                                illum
+                                iusto, vel nisi repudiandae eaque error aliquam, est commodi qui libero eum dicta illo
+                                reiciendis
+                                fuga.
+                            </p>
+
+                            <!-- BENEFIT LIST -->
+                            <ul class="p-0 m-0">
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-check-circle-fill text-light"></i>
+                                    <p class="mb-2">
+                                        We are commited to providing quality IT Services
+                                    </p>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-check-circle-fill text-light"></i>
+                                    <p class="mb-2">
+                                        Provided by experts to help challenge critical activities
+                                    </p>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-check-circle-fill text-light"></i>
+                                    <p class="mb-2">
+                                        Really know the true needs expectations of customers
+                                    </p>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-check-circle-fill text-light"></i>
+                                    <p class="mb-0">
+                                        Processes of achieving the excellence improvements
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2 (FORM) -->
+                <div class="col col-lg-6 col-12">
+
+                    <form class="p-3 p-sm-4 bg-light">
+
+                        <!-- ROW -->
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2 g-2">
+
+                            <!-- COLUMN 1 -->
+                            <div class="col mb-3 m-0">
+
+                                <!-- FORM LABEL -->
+                                <label class="form-label">Name</label>
+
+                                <!-- FORM INPUT -->
+                                <input type="text"
+                                    class="form-control rounded-0 bg-secondary-subtle border-0 shadow-none"
+                                    placeholder="Your Name" aria-label="Your Name">
+
+                            </div>
+
+                            <!-- COLUMN 2 -->
+                            <div class="col mb-3 m-0">
+
+                                <!-- FORM LABEL -->
+                                <label class="form-label">Email</label>
+
+                                <!-- FORM INPUT -->
+                                <input type="text"
+                                    class="form-control rounded-0 bg-secondary-subtle border-0 shadow-none"
+                                    placeholder="Your Email" aria-label="Your Email">
+
+                            </div>
+
+                            <!-- COLUMN 3 -->
+                            <div class="col mb-3 m-0">
+
+                                <!-- FORM LABEL -->
+                                <label class="form-label">Phone Number</label>
+
+                                <!-- FORM INPUT -->
+                                <input type="text"
+                                    class="form-control rounded-0 bg-secondary-subtle border-0 shadow-none"
+                                    placeholder="Your Phone Number" aria-label="Your Phone Number">
+
+                            </div>
+
+                            <!-- COLUMN 4 -->
+                            <div class="col mb-3 m-0">
+
+                                <!-- FORM LABEL -->
+                                <label class="form-label">Subject</label>
+
+                                <!-- FORM INPUT -->
+                                <input type="text"
+                                    class="form-control rounded-0 bg-secondary-subtle border-0 shadow-none"
+                                    placeholder="Your Subject" aria-label="Your Subject">
+
+                            </div>
+
+                        </div>
+
+                        <!-- TEXTAREA LABEL -->
+                        <label for="exampleFormControlTextarea1" class="form-label">Additional Details</label>
+
+                        <!-- TEXTAREA FORM -->
+                        <textarea class="form-control rounded-0 bg-secondary-subtle border-0 shadow-none"
+                            id="exampleFormControlTextarea1" rows="5" placeholder="Additional Details"></textarea>
+
+                        <!-- SUBMIT AND RESET BUTTON -->
+                        <div class="d-flex flex-sm-row flex-column gap-3 mt-3">
+                            <button href="#!" type="submit" class="btn fs-6">Submit</button>
+                            <button type="reset" class="btn btn-outline fs-6">Cancel</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION END -->
+
+    <!-- BLOG SECTION START -->
+
+    <section id="blog">
+
+        <div class="container-xxl px-0">
+
+            <!-- SECTION HEADING -->
+            <h4 class="section-title text-center">Our Blog</h4>
+
+            <!-- CAPTION HEADING -->
+            <h1 class="fw-bold text-center">Latest News & Articles</h1>
+
+            <!-- PARAGRAPH HEADING -->
+            <p class="mb-4 text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, molestias maxime! Aliquam
+                maxime adipisci vel, unde quas expedita voluptatum, officiis omnis harum earum corporis beatae.
+            </p>
+
+            <!-- ROW -->
+            <div class="row row-cols-1 row-cols-xl-3 row-cols-sm-2 g-3 justify-content-center">
+
+                <!-- COLUMN 1 -->
+                <div class="col d-flex">
+
+                    <!-- BLOG 1 -->
+                    <div class="card shadow d-flex">
+
+                        <!-- BLOG IMAGE -->
+                        <div class="bg-dark-subtle">
+                            <img src="media/blog-1.webp" alt="" class="w-100">
+                        </div>
+
+                        <!-- BLOG CAPTION -->
+                        <div class="p-3 p-md-4 flex-grow-1 d-flex flex-column">
+
+                            <!-- BLOG DATE -->
+                            <p class="">dd/mm/yy</p>
+
+                            <!-- CAPTION HEADING -->
+                            <h3 class="fw-bold">Blog Title</h3>
+
+                            <!-- CAPTION DESCRIPTION -->
+                            <p class="blog-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea sit necessitatibus
+                                dolorum nobis repudiandae odio
+                            </p>
+
+                            <!-- CTA BUTTON -->
+                            <a href="#!" class="btn btn-read mt-auto align-self-start">Read More
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="col d-flex">
+
+                    <!-- BLOG 2 -->
+                    <div class="card shadow d-flex">
+
+                        <!-- BLOG IMAGE -->
+                        <div class="bg-dark-subtle">
+                            <img src="media/blog-2.webp" alt="" class="w-100">
+                        </div>
+
+                        <!-- BLOG CAPTION -->
+                        <div class="p-3 p-md-4 flex-grow-1 d-flex flex-column">
+
+                            <!-- BLOG DATE -->
+                            <p class="">dd/mm/yy</p>
+
+                            <!-- CAPTION HEADING -->
+                            <h3 class="fw-bold">Blog Title</h3>
+
+                            <!-- CAPTION DESCRIPTION -->
+                            <p class="blog-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea sit necessitatibus
+                                dolorum nobis repudiandae odio
+                            </p>
+
+                            <!-- CTA BUTTON -->
+                            <a href="#!" class="btn btn-read mt-auto align-self-start">Read More
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="col d-flex">
+
+                    <!-- BLOG 3 -->
+                    <div class="card shadow d-flex">
+
+                        <!-- BLOG IMAGE -->
+                        <div class="bg-dark-subtle">
+                            <img src="media/blog-3.webp" class="w-100" alt="">
+                        </div>
+
+                        <!-- BLOG DESCRIPTION -->
+                        <div class="p-3 p-md-4 flex-grow-1 d-flex flex-column">
+
+                            <!-- BLOG DATE -->
+                            <p class="">dd/mm/yy</p>
+
+                            <!-- BLOG HEADING -->
+                            <h3 class="fw-bold">Blog Title</h3>
+
+                            <!-- BLOG DESCRIPTION -->
+                            <p class="blog-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea sit necessitatibus
+                                dolorum nobis repudiandae odio
+                            </p>
+
+                            <!-- CTA BUTTON -->
+                            <a href="#!" class="btn btn-read mt-auto align-self-start">Read More
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BLOG SECTION END -->
+
+
+    <!-- FOOTER SECTION START -->
+
+    <footer class="container-fluid bg-dark px-0">
+
+        <!-- FOOTER INFORMATION -->
+        <div class="container-xxl pt-5 pb-5 pb-md-4 px-0">
+
+            <!-- ROW -->
+            <div class="row g-3">
+
+                <!-- COLUMN 1 (COMPANY INFORMATION) -->
+                <div class="order-md-1 order-xl-0 col col-12 col-md-6 col-xl-4">
+
+                    <div class="text-light">
+
+                        <!-- FOOTER BRAND -->
+                        <h1 class="fw-bolder fs-2 text-light" href="#">
+                            Company
+                            <i class="bi bi-broadcast-pin"></i>
+                        </h1>
+
+                        <!-- FOOTER PARAGRAPH -->
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident!
+                        </p>
+
+                        <!-- FOOTER COMPANTY INFORMATION -->
+                        <ul class="p-0">
+                            <li class="mb-2">
+                                <i class="bi me-1 bi-geo-alt-fill"></i> Street, Town, Country
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi me-1 bi-envelope-fill"></i> example@gmail.com
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi me-1 bi-telephone-fill"></i> +123-456-789
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2 (PAGE LINKS) -->
+                <div class="order-md-3 order-xl-0 col col-12 col-md-6 col-xl-2">
+
+                    <div class="text-light">
+
+                        <!-- HEADING -->
+                        <h5 class="fw-semibold">Other Pages</h5>
+
+                        <!-- PAGE LINK LIST -->
+                        <ul class="p-0">
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#home" class="text-light">Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#about" class="text-light">About</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#service" class="text-light">Service</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#review" class="text-light">Review</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#blog" class="text-light">Blog</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#contact" class="text-light">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 3 (QUICK LINKS) -->
+                <div class="order-md-4 order-xl-0 col col-12 col-md-6 col-xl-2">
+
+                    <div class="text-light">
+
+                        <!-- HEADING -->
+                        <h5 class="fw-semibold">Quick Links</h5>
+
+                        <!-- QUICK LINKS LIST -->
+                        <ul class="p-0">
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#!" class="text-light">Privacy Policy</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#!" class="text-light">Term Of Service</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#!" class="text-light">Disclaimers</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#!" class="text-light">Credits</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#!" class="text-light">FAQ</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 4 (COMPAY UPDATE) -->
+                <div class="order-md-2 order-xl-0 col col-12 col-md-6 col-xl-4">
+
+                    <div class="text-light">
+
+                        <!-- HEADING -->
+                        <h5 class="fw-semibold">News Letter</h5>
+
+                        <!-- SUBCRIPTION FORM -->
+                        <form class="d-flex border border-5 border-light">
+
+                            <!-- INPUT FORM -->
+                            <input type="text" class="form-control rounded-0 bg-light border-0 shadow-none"
+                                placeholder="Your Email Address" aria-label="Your Email Address">
+
+                            <!-- SUBCRIPTION BUTTON -->
+                            <a href="#!" class="btn fs-6 px-3">Subscribe</a>
+
+                        </form>
+
+                        <!-- PARAGRAPH -->
+                        <p class="my-2">Get the latest news & updates</p>
+
+                        <!-- SOCIAL MEDIA -->
+                        <div class="container-fluid p-0 d-flex gap-2">
+                            <a href="#!" class="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#!" class="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#!" class="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#!" class="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HORIZONTAL RULE -->
+        <hr class="bg-light m-0 mb-3" style="height: 3px;">
+
+        <!-- FOOTER COPYRIGHTS -->
+        <div class="container-xxl text-light p-0">
+
+            <!-- ROW -->
+            <div class="row g-0 row-cols-1 row-cols-lg-2">
+
+                <!-- COLUMN 1 (TEMPLATE NAME) -->
+                <div class="col d-flex justify-content-center justify-content-lg-start">
+                    <p class="text-center">Company Profile Wesbite By Gemah Ghozali</p>
+                </div>
+
+                <!-- COLUMN (COPYRIGHT) -->
+                <div class="col justify-content-lg-end justify-content-center d-flex">
+                    <p>Copyright &copy; 2024 All Right Reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- FOOTER SECTION END -->
+
+    <!-- BOOTSTRAP JS CDN LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- SWIPERJS JS LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- SWIPER INITIALIZATION -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                850: {
+                    slidesPerView: 2,
+                    spaceBetween: 19,
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 19,
+                },
+            },
+        });
+    </script>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
