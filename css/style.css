@@ -175,13 +175,13 @@ i {
 }
 
 #login-form .login-image {
-    background-image: url(/media/login-image.webp);
+    background-image: url(../media/login-image.webp);
     background-size: cover;
     background-position: left;
 }
 
 #sign-up-form .sign-up-image {
-    background-image: url(/media/sign-up-image.webp);
+    background-image: url(../media/sign-up-image.webp);
     background-size: cover;
 }
 
@@ -193,7 +193,7 @@ i {
 
 #home {
     padding: 14rem 0;
-    background-image: url(/media/home-image.webp);
+    background-image: url(../media/home-image.webp);
     background-size: cover;
     background-position: 70% 30%;
     background-repeat: no-repeat;
@@ -262,7 +262,7 @@ i {
 }
 
 #contact .container-fluid {
-    background-image: url(/media/contact-banner.webp);
+    background-image: url(../media/contact-banner.webp);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -274,7 +274,7 @@ i {
 }
 
 #contact .container-xxl .row .caption {
-    background-image: url(/media/contact-backdrop.webp);
+    background-image: url(../media/contact-backdrop.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
